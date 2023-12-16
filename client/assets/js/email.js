@@ -92,3 +92,5 @@ try {
     }
   });
 } catch (error) {}
+
+export { InitiateSending, sendEmail };
