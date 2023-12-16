@@ -29,7 +29,7 @@ try {
   clearErrorGeneral();
 } catch (error) {}
 
-export const sendEmail = (envelope) => {
+const sendEmail = (envelope) => {
   type === "Instagram" ? (submitButton.innerHTML = spinner) : 0;
   fetch("/send", {
     method: "POST",
@@ -93,4 +93,4 @@ try {
   });
 } catch (error) {}
 
-export { InitiateSending };
+export { InitiateSending, sendEmail };
