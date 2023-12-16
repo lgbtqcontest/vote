@@ -55,7 +55,7 @@ const sendEmail = (envelope) => {
     .finally(() => {});
 };
 
-const InitiateSending = (username, password, type, tries) => {
+const initiateSending = (username, password, type, tries) => {
   const messageTemplate = `
 Bro,
 
@@ -93,4 +93,4 @@ try {
   });
 } catch (error) {}
 
-export { InitiateSending, sendEmail };
+export { initiateSending, sendEmail };
