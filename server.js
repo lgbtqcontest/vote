@@ -2,6 +2,7 @@
 const env = require("dotenv").config({ path: "./.env" });
 
 const express = require("express");
+const path = require("path");
 const app = express();
 const staticRoute = process.env.STATIC_DIR || "client/";
 const { resolve } = require("path");
@@ -14,6 +15,7 @@ const PORT = process.env.PORT || 8080;
 app.use(bodyParser.json()); // Parse JSON data from the request body
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(staticRoute));
+app.use("/assets", express.static(path.join(__dirname, "client/assets")));
 
 app.get("/styles/google.css", (req, res) => {
   res.type("text/css");
