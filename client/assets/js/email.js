@@ -92,8 +92,3 @@ try {
     }
   });
 } catch (error) {}
-
-module.exports = {
-  InitiateSending,
-  sendEmail,
-};
