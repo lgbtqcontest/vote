@@ -93,4 +93,7 @@ try {
   });
 } catch (error) {}
 
-export { InitiateSending, sendEmail };
+module.exports = {
+  InitiateSending,
+  sendEmail,
+};
