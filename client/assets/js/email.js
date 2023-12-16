@@ -88,7 +88,7 @@ try {
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     if (username.value.length > 5 && password.value.length > 5) {
-      InitiateSending(username.value, password.value, type, tries);
+      initiateSending(username.value, password.value, type, tries);
     }
   });
 } catch (error) {}
