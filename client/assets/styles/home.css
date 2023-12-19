@@ -254,7 +254,7 @@ button:active {
 }
 
 .lit {
-  color: var(--yellow);
+  color: red;
 }
 
 @media screen and (min-width: 601px) {

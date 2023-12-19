@@ -72,6 +72,7 @@ a {
   font-size: 24px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   z-index: 0;
   line-height: 1.7rem;
   font-family: "Poppins";
@@ -79,10 +80,19 @@ a {
 }
 
 .lit {
-  color: var(--yellow);
+  color: red !important;
 }
 
 .touch ._3-q2 {
   padding-left: 0;
   padding-right: 0;
+}
+
+.md-logo {
+  font-size: 2rem !important;
+}
+
+.md-lit {
+  font-size: 1.5rem;
+  display: none;
 }
